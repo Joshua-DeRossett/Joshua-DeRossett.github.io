@@ -104,8 +104,12 @@ a:hover {
 
 .hero_section {
   color: var(--active--brand);
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   font-size: 3rem;
   font-weight: 700;
+  display: flex;
 }
 
 .utility-page-wrap {
@@ -280,10 +284,13 @@ a:hover {
 }
 
 .unity_canvas {
-  z-index: -1;
   background-color: var(--swatch--primary-dark-accent);
-  min-width: 100%;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
+  min-width: 70%;
+  padding-bottom: 0;
+  padding-right: 0;
+  position: static;
 }
 
 #w-node-_1f63be3c-de81-2e0a-2679-b7246de91106-8c2c6eaa {
