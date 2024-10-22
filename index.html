@@ -72,8 +72,8 @@
   <script src="Build/Build.loader.js"></script>
   <script>
     const canvas = document.querySelector("#unity-canvas");
-    //canvas.width = canvas.clientWidth * window.devicePixelRatio;
-    //canvas.height = canvas.clientHeight * window.devicePixelRatio;
+    canvas.width = canvas.clientWidth * window.devicePixelRatio;
+    canvas.height = canvas.clientHeight * window.devicePixelRatio;
 
     createUnityInstance(canvas, {
       arguments: [],
