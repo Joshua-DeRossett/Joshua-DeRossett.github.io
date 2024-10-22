@@ -72,8 +72,8 @@
   <script src="Build/Build.loader.js"></script>
   <script>
     const canvas = document.querySelector("#unity-canvas");
-    canvas.width = canvas.clientWidth * window.devicePixelRatio;
-    canvas.height = canvas.clientHeight * window.devicePixelRatio;
+    //canvas.width = canvas.clientWidth * window.devicePixelRatio;
+    //canvas.height = canvas.clientHeight * window.devicePixelRatio;
 
     createUnityInstance(canvas, {
       arguments: [],
@@ -84,8 +84,7 @@
       companyName: "DefaultCompany",
       productName: "Portfolio",
       productVersion: "0.1.0",
-      matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-      //devicePixelRatio: 2, // Uncomment this to override low DPI rendering on high DPI displays.
+      matchWebGLToCanvasSize: false,
     });
 </script>
 </body>
