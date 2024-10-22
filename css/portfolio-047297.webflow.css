@@ -266,13 +266,16 @@ a:hover {
   /*min-height: 100vh;*/
   display: flex;
   position: relative;
+  min-height: calc(60vh + 12rem);
 }
 
 .title_block {
-  grid-column-gap: .6875rem;
-  grid-row-gap: .6875rem;
-  flex-flow: column;
+  position: relative;
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  grid-column-gap: 0.6875rem;
+  grid-row-gap: 0.6875rem;
 }
 
 .image {
@@ -292,7 +295,7 @@ a:hover {
   max-width: 70%;
   padding-bottom: 0;
   padding-right: 0;
-  position: static;
+  position: absolute;
 }
 
 #w-node-_1f63be3c-de81-2e0a-2679-b7246de91106-8c2c6eaa {
