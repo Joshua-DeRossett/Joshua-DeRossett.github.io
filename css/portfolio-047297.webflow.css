@@ -288,6 +288,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   min-width: 70%;
+  max-width: 70%;
   padding-bottom: 0;
   padding-right: 0;
   position: static;
