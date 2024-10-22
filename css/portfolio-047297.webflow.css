@@ -263,7 +263,7 @@ a:hover {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   display: flex;
   position: relative;
 }
@@ -288,12 +288,11 @@ a:hover {
   justify-content: center;
   align-items: center;
   min-width: 70%;
+  min-height: 60vh;
   max-width: 70%;
   padding-bottom: 0;
   padding-right: 0;
   position: static;
-  aspect-ratio: 3/2;
-  object-fit: cover;
 }
 
 #w-node-_1f63be3c-de81-2e0a-2679-b7246de91106-8c2c6eaa {
