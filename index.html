@@ -71,6 +71,10 @@
   <script src="Build/Build.loader.js"></script>
   <script>
     const canvas = document.querySelector("#unity-canvas");
+    canvas.width = canvas.clientWidth * window.devicePixelRatio;
+    canvas.height = canvas.clientHeight * window.devicePixelRatio;
+
+    /*
     var gl = canvas.getContext("webgl");
 
     const canvasToDisplaySizeMap = new Map([[canvas, [canvas.width, canvas.height]]]);
@@ -130,6 +134,7 @@
 
       return needResize;
     }
+    */
 
     createUnityInstance(canvas, {
       arguments: [],
