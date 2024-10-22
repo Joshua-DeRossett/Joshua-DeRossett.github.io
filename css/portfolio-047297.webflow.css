@@ -292,6 +292,8 @@ a:hover {
   padding-bottom: 0;
   padding-right: 0;
   position: static;
+  aspect-ratio: 3/2;
+  object-fit: cover;
 }
 
 #w-node-_1f63be3c-de81-2e0a-2679-b7246de91106-8c2c6eaa {
