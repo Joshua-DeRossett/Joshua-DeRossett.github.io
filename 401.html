@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Mon Oct 14 2024 06:05:28 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Wed Oct 23 2024 21:23:56 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="67071b486665397a78927aff" data-wf-site="66f78216052dbaef8c2c6ea1">
 <head>
   <meta charset="utf-8">
@@ -40,18 +40,20 @@
   <script src="js/webflow.js" type="text/javascript"></script>
   <script src="Build/Build.loader.js"></script>
   <script>
-	createUnityInstance(document.querySelector("#unity-canvas"), {
-  	arguments: [],
-    dataUrl: "Build/Build.data.unityweb",
-    frameworkUrl: "Build/Build.framework.js.unityweb",
-    codeUrl: "Build/Build.wasm.unityweb",
-    streamingAssetsUrl: "StreamingAssets",
-    companyName: "DefaultCompany",
-    productName: "Portfolio",
-    productVersion: "0.1.0",
-    // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-    // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-	});
+    const canvas = document.querySelector("#unity-canvas");
+    canvas.width = canvas.clientWidth * window.devicePixelRatio;
+    canvas.height = canvas.clientHeight * window.devicePixelRatio;
+    createUnityInstance(canvas, {
+      arguments: [],
+      dataUrl: "Build/Build.data.unityweb",
+      frameworkUrl: "Build/Build.framework.js.unityweb",
+      codeUrl: "Build/Build.wasm.unityweb",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "DefaultCompany",
+      productName: "Portfolio",
+      productVersion: "0.1.0",
+      matchWebGLToCanvasSize: false,
+    });
 </script>
 </body>
 </html>
